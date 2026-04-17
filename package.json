@@ -1,0 +1,36 @@
+{
+  "name": "pi-inventory_one",
+  "version": "1.0.0",
+  "description": "Projeto integrador SENAC Sistema DE gestão de itens e Iventário",
+  "main": "./BACKEND/index.js",
+  "scripts": {
+    "start": "node  ./BACKEND/index",
+    "dev": "nodemon ./BACKEND/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuriloQuintal/PI-INVENTORY_ONE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MuriloQuintal/PI-INVENTORY_ONE/issues"
+  },
+  "homepage": "https://github.com/MuriloQuintal/PI-INVENTORY_ONE#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "msql": "^1.0.3",
+    "mysql": "^2.18.1",
+    "sweetalert2": "^11.26.24"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
