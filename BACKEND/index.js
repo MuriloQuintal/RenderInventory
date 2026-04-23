@@ -1,5 +1,8 @@
 require('dotenv').config()
 
+const path = require('path');
+
+
 const express = require('express')
 const app = express()
 
@@ -369,5 +372,14 @@ app.get("/produtos/agrupamentos/dashboard", (req, res) => {
         res.send(resultado)
     })
 })
+
+//Aponta para a pasta do seu frontend
+app.use(express.static(path.join(__dirname, '../frontend/html')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/html', 'login.html'));
+});
+
+
 
 app.listen(10000)
