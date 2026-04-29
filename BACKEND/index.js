@@ -377,7 +377,7 @@ app.get("/produtos/agrupamentos/dashboard", (req, res) => {
 app.use(express.static(path.join(__dirname, '../frontend/html')));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/html', 'login.html'));
+  res.sendFile(path.join(__dirname, '../frontend/html/login.html'));
 });
 
 
